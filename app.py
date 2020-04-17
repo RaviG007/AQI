@@ -11,7 +11,7 @@ app = Flask(__name__)
 def home():
 	return render_template('home.html')
 
-@app.route('/predict',methods=['POST'])
+@app.route('/predict',methods=['GET', 'POST'])
 def predict():
     df=pd.read_csv('real_2018.csv')
     my_prediction=loaded_model.predict(df.iloc[:,:-1].values)
