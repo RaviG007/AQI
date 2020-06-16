@@ -1,56 +1,46 @@
-body{
-	font:15px/1.5 Arial, Helvetica,sans-serif;
-	padding: 0px;
-	background-color:#f4f3f3;
+input[type="submit"] {
+    border: 8px solid #0A3D5B;
+    background-color: #fffaf0;
+    color: #ffffff;
+    padding: 20px 60px;
+    font-size: 10px;
+    font-weight: 500;
+    background: #5f9ea0;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    text-transform: capitalize;
 }
 
-.container{
-	width:100%;
-	margin: auto;
-	overflow: hidden;
+input:focus {
+    outline: none;
 }
 
-header{
-	background:#03A9F4;#35434a;
-	border-bottom:#448AFF 3px solid;
-	height:120px;
-	width:100%;
-	padding-top:30px;
+/* slide hover left -1 css */
 
+input.slide-hover-left-1 {
+    background-image: linear-gradient(0, #0A3D5B, #0A3D5B);
+    background-size: 0;
+    transition: .8s;
+    background-repeat: no-repeat;
 }
 
-.main-header{
-			text-align:center;
-			background-color: blue;
-			height:100px;
-			width:100%;
-			margin:0px;
-		}
-#brandname{
-	float:left;
-	font-size:30px;
-	color: #fff;
-	margin: 10px;
+input.slide-hover-left-1:hover {
+    background-size: 100%;
+    color: #fff;
 }
-
-header h2{
-	text-align:center;
-	color:#fff;
-
+body {
+   background: url(style1.jpg);
 }
-
-
-
-.btn-info {background-color: #2196F3;
-	height:40px;
-	width:100px;} /* Blue */
-.btn-info:hover {background: #0b7dda;}
-
-
-.resultss{
-	border-radius: 15px 50px;
-    background: #345fe4;
+h1 {
+    color: lightblue;
+}
+#ip1 {
+    border-radius: 25px;
+    border: 2px solid #609;
     padding: 20px; 
     width: 200px;
-    height: 150px;
+    height: 1px;    
 }
